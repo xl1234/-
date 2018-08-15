@@ -13,7 +13,7 @@ for line in f.readlines():
     line.append(str(total))
     line.append(str(total_avg))
     score.append(line)
-#score.sort(key = lambda x:x.split(" ")[10],reverse = True)
+score.sort(key = lambda x:x[10],reverse = True)
 for i in range(1,12):
     sum = 0
     for j in range(len(score)):
