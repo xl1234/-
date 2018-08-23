@@ -27,4 +27,5 @@ for j in range(int(s),int(e)):
     t = threading.Thread(target = html,args=("https://www.qiushibaike.com/imgrank/page/%s/"%j,))
     t.start()
     time.sleep(1)
+t.join()
 print time.time()-time_start
